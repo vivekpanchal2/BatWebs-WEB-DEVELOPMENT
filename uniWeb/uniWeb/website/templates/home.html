@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University - Admission</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+       
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .jumbotron {
+            background-color: #343a40;
+            color: #ffffff;
+        }
+        .admission-button {
+            margin-top: 20px;
+        }
+
+        .quotes-section{
+            background-color: #343a40;
+            color: #ffffff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Welcome to Batwebs University</h1>
+        <p class="lead">Unlock Your Potential in Computer Engineering</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="text-center">
+                    <h2>Explore the World of Computer Engineering</h2><br>
+                    <p>At Batwebs University, we offer cutting-edge programs in computer engineering to prepare you for the future.</p><br>
+                    <p>Join us and embark on a journey of innovation and discovery.</p><br>
+                </div>
+
+                <div class="text-center admission-button">
+                    <a href="{% url 'join' %}" class="btn btn-primary btn-lg">Get Admission</a>
+                </div>
+
+                <div class="text-center admission-button">
+                    <a href="{% url 'manage' %}" class="btn btn-primary btn-lg">Manage Students</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-5 quotes-section">
+            <div class="col-md-6 mx-auto">
+                <div class="text-center ">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">"The best way to predict the future is to create it."</p>
+                        <footer class="blockquote-footer">- Peter Drucker</footer>
+                    </blockquote>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
